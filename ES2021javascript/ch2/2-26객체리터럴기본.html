@@ -1,0 +1,42 @@
+<!-- 
+  배열도 객체고 함수도 객체다. 
+  객체 리터럴은 배열도 함수도 아닌 친구들 
+  특정 모양을 지님
+
+  cosnt eden = {
+    name : 'eden', // 속성명에 숫자가 있다거나, 특수문자, 띄어쓰기가 이씅면 ""로 묶어줘야 함
+    year : 1997,
+    month : 11,
+    date : 17,
+    gender: "M", //사실 안찍어도 되지만 확장성으로 고려해서 붙임
+  };
+
+  {}가 객체리터럴,
+  name,year...gender가 속성명,
+  eden,1997...M 이 속성값
+  그 둘을 합쳐서 속성
+
+  속성에 접근은 두가지로 할 수 있다. 
+  eden.name도 되고
+  eden['name']도 된다.
+
+  만약 속성명이 ''로 묶여있다면 호출시 후자를 사용해야 함
+
+  const name = 'date';
+  const eden = {
+    name : 'eden',
+    date : 11
+  }
+  console.log(eden[name]) // eden['date']와 같음
+  정답은 11
+
+  속성 수정이나 추가
+  그냥 eden.gender = "f",
+  eden.hello = "hello"하면 됨
+
+  delete eden.gender하면 속성이 삭제됨
+
+  배열과 마찬가지로 자체는 수정안되지만 내부는 수정가능
+
+  객체 안의 함수를 메서드라고 따로 이름 붙인것
+ -->
